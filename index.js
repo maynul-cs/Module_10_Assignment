@@ -89,3 +89,13 @@ function findAverage(arr){
 let numbers1 = [1, 2, 3, 4 , 5, 6, 7, 8, 9, 10];
 let average = findAverage(numbers1);
 console.log("The Average Number is =" + " " + average);
+
+
+
+// 8) Write a function named isLeapYear that takes a year as an argument and returns true if the year is a leap year, and false if it is not.
+
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+  }
+  console.log(isLeapYear(2023));  
+  console.log(isLeapYear(2024));  
