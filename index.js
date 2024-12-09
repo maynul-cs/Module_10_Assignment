@@ -35,3 +35,23 @@ function findMin(arr) {
   let numbers = [10, 40, 25, 7, 80];
   let smallestNumber = findMin(numbers);
   console.log("The Smallest Number is =" + " " + smallestNumber);
+
+
+// 4) Write a function named filterEvenNumbers that takes an array of numbers and returns a new array containing only the even numbers.
+
+function filterEvenNumbers(numbers) {
+    const evenNumbers = [];
+  
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 === 0) {
+        evenNumbers.push(numbers[i]);
+      }
+    }
+    return evenNumbers;
+  }
+  
+  const numberArray = [11, 24, 13, 44, 15, 26, 77, 18];
+  const evenNumbersArray = filterEvenNumbers(numberArray);
+  console.log(evenNumbersArray);
+
+
