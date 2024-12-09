@@ -3,7 +3,7 @@
 function calculateDifference(x,y){
     return x-y;
 }
-let result=calculateDifference(85,40);
+let result = calculateDifference(85,40);
 console.log(result);
 
 
@@ -61,12 +61,12 @@ function sortArrayDescending(arr){
     return  arr.sort((x, y) => y - x);
  }
  
- let array=[30, 15, 20, 22, 12, 36, 40, 50];
- let showShort=sortArrayDescending(array);
+ let array = [30, 15, 20, 22, 12, 36, 40, 50];
+ let showShort = sortArrayDescending(array);
  console.log(showShort);
 
 
- // 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.
+// 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.
 
 function lowercaseFirstLetter(str) {
     if (!str || str.length === 0) {
@@ -78,3 +78,14 @@ function lowercaseFirstLetter(str) {
   const inputString = "Bangladesh";
   const outputString = lowercaseFirstLetter(inputString);
   console.log(outputString); 
+
+
+// 7) Write a function named findAverage that takes an array of numbers and returns the average of all elements.
+
+function findAverage(arr){
+    const sum = arr.reduce((acc, currentValue) => acc + currentValue, 0);
+    return sum/arr.length;
+}
+let numbers1 = [1, 2, 3, 4 , 5, 6, 7, 8, 9, 10];
+let average = findAverage(numbers1);
+console.log("The Average Number is =" + " " + average);
