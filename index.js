@@ -64,3 +64,17 @@ function sortArrayDescending(arr){
  let array=[30, 15, 20, 22, 12, 36, 40, 50];
  let showShort=sortArrayDescending(array);
  console.log(showShort);
+
+
+ // 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.
+
+function lowercaseFirstLetter(str) {
+    if (!str || str.length === 0) {
+      return str;
+    }
+    return str[0].toLowerCase() + str.slice(1);
+  }
+  
+  const inputString = "Bangladesh";
+  const outputString = lowercaseFirstLetter(inputString);
+  console.log(outputString); 
