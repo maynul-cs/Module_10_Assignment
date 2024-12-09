@@ -13,3 +13,25 @@ function isOdd(x){
     return x % 2 !== 0;
 }
 console.log(isOdd(20));
+
+
+// 3) Write a function named findMin that takes an array of numbers and returns the smallest number from the array.
+
+function findMin(arr) {
+    if (arr.length === 0) {
+      return undefined; 
+    }
+  
+    let min = arr[0]; 
+  
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < min) {
+        min = arr[i];
+      }
+    }
+    return min;
+  }
+
+  let numbers = [10, 40, 25, 7, 80];
+  let smallestNumber = findMin(numbers);
+  console.log("The Smallest Number is =" + " " + smallestNumber);
